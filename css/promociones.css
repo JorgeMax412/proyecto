@@ -58,7 +58,7 @@ span{
 
     .Opciones1{
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+        grid-gap: 15px;
         z-index: -1;
     }
 
@@ -73,7 +73,8 @@ span{
 
     .Opciones1{
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
+        grid-gap: 15px;
+        z-index: -1;
     }
 
     .tarjeta h3{
