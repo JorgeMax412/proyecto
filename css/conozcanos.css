@@ -1,0 +1,169 @@
+.Container1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+}
+
+
+.somos{
+    color: black;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    justify-self: center;
+    text-align: center;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    background: rgb(181, 255, 255);
+}
+
+.Container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 75px;
+    gap: 50px;
+}
+
+.Container2 img{
+    width: 80%;
+    height: 100%;
+    justify-self: center;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.vendemos{
+    color: black;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    justify-self: center;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    background: rgb(181, 255, 255);
+}
+
+/** FINAL **/
+
+.final{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+/** PREGUNTAS FRECUENTES **/
+
+.acordeon{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+}
+
+.acordeon h3{
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+details.style{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    max-height: 20px;
+    overflow: hidden;
+    color: black;
+    
+
+}
+
+details[open].style{
+    max-height: 500px;
+}
+
+details.style summary{
+    outline: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+details[open].style summary{
+    padding-bottom: 10px;
+}
+
+/** FORMULARIO **/
+
+form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+}
+
+.formu h3{
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    resize: none;
+    border-radius: 10px;
+}
+
+#Boton{
+    padding: 20px;
+}
+
+#Boton:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width:850px){
+
+    .Container2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 75px;
+    }
+
+
+    form{
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .final{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .acordeon{
+        width: 80%;
+    }
+
+    form{
+        width: 80%;
+    }
+
+}

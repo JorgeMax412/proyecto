@@ -1,0 +1,157 @@
+header{
+    width: 100%;
+    background: rgb(35, 144, 137);
+    margin: 0%;
+}
+
+#boton_menu{
+    display: none;
+}
+
+#label_menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+
+#label_menu:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header img{
+    width: auto;
+    height: 50px;
+    align-items: center;
+}
+
+.menu li:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu li a{
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:850px){
+
+    #label_menu{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: rgb(35, 144, 137);
+        border-radius: 3px;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    #boton_menu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgb(35, 144, 137);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+    padding: 0;
+    
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+}
+
+.redes li{
+    margin: 0 10px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.redes a:Hover i{
+    color: rgb(23, 94, 89);
+}
+
+.footer-copy{
+    background-color: rgb(23, 94, 89);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-copy p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.footer-copy span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
