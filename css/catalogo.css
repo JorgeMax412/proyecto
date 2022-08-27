@@ -1,78 +1,66 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(2, 85, 226);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
+.titulo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin-top: 50px;
 }
 
-header{
-    width: 100%;
-    background: rgba(43, 14, 156, 0.7);
-    margin: 0%;
-}
-#boton_menu{
-    display: none;
+.titulo img{
+    width: 70%;
+    height: auto;
 }
 
-#label_menu{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 15px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.catalogo{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-gap: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#label_menu:hover{
+.tarjeta{
+    background: rgb(229, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.tarjeta h3{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.tarjeta p{
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.catalogo img{
+    margin-top: 20px;
+    max-width: 85%;
+    transition: all 300ms;
+    position: relative;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+#Boton{
+    font-size: 15px;
+    width: 80%;
+    height: 2.7rem; 
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(176, 176, 176);
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+#Boton:hover{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
-    width: fit-content;
-}
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 5px;
-    display: flex;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-
-.menu li:hover{
-    background: rgba(0, 0, 0, 0.3);
-}
-.menu li a{
-    display: block;
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-}
-
-@media (max-width:700px){
-
-    #label_menu{
-        display: block;
-    }
-
-    .menu{
-        position: absolute;
-        background: rgba(43, 14, 156, 0.7);
-        border-radius: 3px;
-        width: 70%;
-        margin-left: -70%;
-        transition: all 0.3s;
-    }
-
-    .menu ul{
-        flex-direction: column;
-    }
-
-    #boton_menu:checked ~ .menu {
-        margin: 0;
-    }
-
+    background-color: rgb(156, 156, 156);
 }
